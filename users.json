@@ -1,0 +1,58 @@
+[
+    {
+        "firstName": "King",
+        "lastName": "Phonix",
+        "email": "phonixx6@gmail.com",
+        "phone": "7845963218",
+        "password": "$2y$10$oDxo7RfDs8ci2pSJB5QXhOdwlLnKxzIhOmhl.XtgG3jiS1yx1ojXq",
+        "createdAt": "2025-10-05 18:35:34"
+    },
+    {
+        "firstName": "King",
+        "lastName": "Lion",
+        "email": "Lion@gmail.com",
+        "phone": "9574812302",
+        "password": "$2y$10$OxSqoT3qBMsE4CVZNYEyx.rWS7\/vVO8fkMopu5FZ\/M4ADdcBjAplq",
+        "createdAt": "2025-10-05 18:41:19"
+    },
+    {
+        "firstName": "King",
+        "lastName": "Lion",
+        "email": "Lion8@gmail.com",
+        "phone": "9841526307",
+        "password": "$2y$10$71VNgyudKCAQqwWFQgVl4.WpR8tBUKgitQL2wj1Gbhtozi.BPummC",
+        "createdAt": "2025-10-05 18:42:12"
+    },
+    {
+        "firstName": "ETC",
+        "lastName": "CT",
+        "email": "etc@gmail.com",
+        "phone": "4589632107",
+        "password": "$2y$10$s8NZxiGA3oCR8zuOlrejTu5yj48WjwlX.13nUa8IY4TqhSeNfA9FS",
+        "createdAt": "2025-10-05 19:26:14"
+    },
+    {
+        "firstName": "King",
+        "lastName": "ROKO",
+        "email": "Roko@gmail.com",
+        "phone": "9784512036",
+        "password": "$2y$10$1bAJ4apf1nj2Ng9Cvnvooe5cbkuAR8iKa5eBMy9MVREQdGFXp0J82",
+        "createdAt": "2025-10-06 03:57:05"
+    },
+    {
+        "firstName": "Dhruvik",
+        "lastName": "Faldu",
+        "email": "dhruvik@gmail.com",
+        "phone": "7990166901",
+        "password": "$2y$10$t2I8kNvdLBWU9QSDXKvH4OTZKJ094IpYK35j8WdW\/.en1gWGcKD4C",
+        "createdAt": "2025-10-06 08:50:56"
+    },
+    {
+        "firstName": "ETC",
+        "lastName": "EE",
+        "email": "PHO@gmail.com",
+        "phone": "8579643281",
+        "password": "$2y$10$zw\/sKIcXEOUw3l25GVgwe.yoYPSDfCTJHPKtKxSZ0i0pMq1eOn5SG",
+        "createdAt": "2025-10-06 11:56:55"
+    }
+]

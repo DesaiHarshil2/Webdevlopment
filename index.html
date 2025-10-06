@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Palace Hotel - Luxury Hotel Management System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2><i class="fas fa-hotel"></i> Grand Palace Hotel</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="rooms.html" class="nav-link">Rooms</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">Services</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="events.php" class="nav-link">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a href="gallery.html" class="nav-link">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a href="signup.html" class="nav-link">Sign Up</a>
+                </li>
+                <li class="nav-item">
+                    <a href="booking.html" class="nav-link booking-btn">Book Now</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Grand Palace Hotel</h1>
+            <p>Experience luxury and comfort in the heart of the city</p>
+            <div class="hero-buttons">
+                <a href="booking.html" class="btn btn-primary">Book Now</a>
+                <a href="rooms.html" class="btn btn-secondary">View Rooms</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Luxury Hotel">
+        </div>
+    </section>
+
+    <!-- Slider Section -->
+    <section class="container" style="margin: 60px auto;">
+        <div class="slider" id="home-slider">
+            <div class="slides">
+                <div class="slide"><img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=1400&q=80" alt="Room"></div>
+                <div class="slide"><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1400&q=80" alt="Restaurant"></div>
+                <div class="slide"><img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1400&q=80" alt="Pool"></div>
+            </div>
+            <div class="slider-nav">
+                <button class="slider-btn" data-dir="prev">❮</button>
+                <button class="slider-btn" data-dir="next">❯</button>
+            </div>
+            <div class="slider-dots"></div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2>Why Choose Grand Palace Hotel?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-bed"></i>
+                    <h3>Luxury Rooms</h3>
+                    <p>Spacious and elegantly designed rooms with modern amenities</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Fine Dining</h3>
+                    <p>World-class restaurants serving international and local cuisine</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-spa"></i>
+                    <h3>Spa & Wellness</h3>
+                    <p>Relax and rejuvenate at our state-of-the-art spa facilities</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Stats -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>150+</h3>
+                    <p>Luxury Rooms</p>
+                </div>
+                <div class="stat-item">
+                    <h3>25+</h3>
+                    <p>Years Experience</p>
+                </div>
+                <div class="stat-item">
+                    <h3>50+</h3>
+                    <p>Staff Members</p>
+                </div>
+                <div class="stat-item">
+                    <h3>98%</h3>
+                    <p>Guest Satisfaction</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Links -->
+    <section class="quick-links">
+        <div class="container">
+            <h2>Quick Access</h2>
+            <div style="text-align:center; margin-bottom: 16px;">
+                <button class="btn btn-secondary" id="open-offer-modal">View Special Offer</button>
+            </div>
+            <div class="links-grid">
+                <a href="booking.html" class="quick-link-card">
+                    <i class="fas fa-calendar-check"></i>
+                    <h3>Make Reservation</h3>
+                    <p>Book your stay with us</p>
+                </a>
+                <a href="rooms.html" class="quick-link-card">
+                    <i class="fas fa-bed"></i>
+                    <h3>Room Types</h3>
+                    <p>Explore our accommodation options</p>
+                </a>
+                <a href="services.html" class="quick-link-card">
+                    <i class="fas fa-concierge-bell"></i>
+                    <h3>Hotel Services</h3>
+                    <p>Discover our amenities</p>
+                </a>
+                <!-- <a href="admin.html" class="quick-link-card">
+                    <i class="fas fa-cog"></i>
+                    <h3>Management</h3>
+                    <p>Hotel administration panel</p>
+                </a> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Example Modal Trigger -->
+    <section class="container" style="margin: 20px auto 60px; text-align: center;">
+        <button class="btn btn-secondary" id="open-offer-modal">View Special Offer</button>
+    </section>
+
+    <!-- Reusable Modal -->
+    <div class="modal-overlay" id="offer-modal" style="display:none;">
+        <div class="modal" role="dialog" aria-modal="true" aria-labelledby="offer-title">
+            <div class="modal-header">
+                <h3 id="offer-title">Limited-Time Offer</h3>
+                <button class="modal-close" aria-label="Close modal">×</button>
+            </div>
+            <div class="modal-body">
+                <p>Book 3 nights and get the 4th night free! Complimentary breakfast included.</p>
+                <a href="booking.html" class="btn btn-primary" style="margin-top: 10px; display: inline-block;">Book Now</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Reusable Modal Container -->
+    <div class="modal-overlay" id="modal-overlay" style="display:none;">
+        <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <div class="modal-header">
+                <h3 id="modal-title">Special Offer</h3>
+                <button class="modal-close" id="modal-close" aria-label="Close">✕</button>
+            </div>
+            <div class="modal-body">
+                <p>Book now and get 15% off on all Deluxe Rooms for stays this month only.</p>
+                <a href="booking.html" class="btn btn-primary" style="margin-top:10px; display:inline-block;">Claim Offer</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Grand Palace Hotel</h3>
+                    <p>Your luxury destination in the heart of the city</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="rooms.html">Rooms</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="events.html">Events</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Junagadh, Gujarat, India</p>
+                    <p><i class="fas fa-phone"></i> +91 9825000000</p>
+                    <p><i class="fas fa-envelope"></i> info@grandpalacehotel.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Management</h4>
+                    <ul>
+                        <li><a href="admin.html">Admin Panel</a></li>
+                        <li><a href="staff.html">Staff Portal</a></li>
+                        <li><a href="booking.html">Reservations</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Grand Palace Hotel. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

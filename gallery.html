@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery - Grand Palace Hotel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2><i class="fas fa-hotel"></i> Grand Palace Hotel</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="rooms.html" class="nav-link">Rooms</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">Services</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="events.php" class="nav-link">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a href="gallery.html" class="nav-link">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a href="signup.html" class="nav-link">Sign Up</a>
+                </li>
+                <li class="nav-item">
+                    <a href="booking.html" class="nav-link booking-btn">Book Now</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Photo Gallery</h1>
+            <p>Explore the beauty and elegance of Grand Palace Hotel through our stunning photo collection</p>
+        </div>
+    </section>
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="gallery-grid">
+                <!-- Hotel Exterior -->
+                <div class="gallery-item" data-category="exterior">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Hotel Exterior">
+                    <div class="gallery-overlay">
+                        <h3>Grand Palace Hotel</h3>
+                        <p>Luxury exterior view</p>
+                    </div>
+                </div>
+
+                <!-- Lobby -->
+                <div class="gallery-item" data-category="exterior">
+                    <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Hotel Lobby">
+                    <div class="gallery-overlay">
+                        <h3>Grand Lobby</h3>
+                        <p>Elegant reception area</p>
+                    </div>
+                </div>
+
+                <!-- Deluxe Room -->
+                <div class="gallery-item" data-category="rooms">
+                    <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Deluxe Room">
+                    <div class="gallery-overlay">
+                        <h3>Deluxe Room</h3>
+                        <p>Comfortable and modern</p>
+                    </div>
+                </div>
+
+                <!-- Executive Suite -->
+                <div class="gallery-item" data-category="rooms">
+                    <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Executive Suite">
+                    <div class="gallery-overlay">
+                        <h3>Executive Suite</h3>
+                        <p>Spacious and luxurious</p>
+                    </div>
+                </div>
+
+                <!-- Presidential Suite -->
+                <div class="gallery-item" data-category="rooms">
+                    <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Presidential Suite">
+                    <div class="gallery-overlay">
+                        <h3>Presidential Suite</h3>
+                        <p>Ultimate luxury experience</p>
+                    </div>
+                </div>
+
+                <!-- Restaurant -->
+                <div class="gallery-item" data-category="dining">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Fine Dining Restaurant">
+                    <div class="gallery-overlay">
+                        <h3>Fine Dining Restaurant</h3>
+                        <p>Elegant dining experience</p>
+                    </div>
+                </div>
+                <!-- Garden -->
+                <div class="gallery-item" data-category="exterior">
+                    <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Hotel Garden">
+                    <div class="gallery-overlay">
+                        <h3>Beautiful Garden</h3>
+                        <p>Peaceful outdoor space</p>
+                    </div>
+                </div>
+
+                <!-- Rooftop -->
+                <div class="gallery-item" data-category="dining">
+                    <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Rooftop Restaurant">
+                    <div class="gallery-overlay">
+                        <h3>Rooftop Restaurant</h3>
+                        <p>Panoramic city views</p>
+                    </div>
+                </div>
+
+                <!-- Luxury Bathroom -->
+                <div class="gallery-item" data-category="rooms">
+                    <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Luxury Bathroom">
+                    <div class="gallery-overlay">
+                        <h3>Luxury Bathroom</h3>
+                        <p>Marble and premium fixtures</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Virtual Tour -->
+    <section class="virtual-tour">
+        <div class="container">
+            <h2>Virtual Tour</h2>
+            <p>Take a 360° virtual tour of our hotel facilities</p>
+            <div class="tour-buttons">
+                <a href="#" class="btn btn-primary">Start Virtual Tour</a>
+                <a href="#" class="btn btn-secondary">Download Brochure</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Grand Palace Hotel</h3>
+                    <p>Your luxury destination in the heart of the city</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="rooms.html">Rooms</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="events.html">Events</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Junagadh, Gujarat, India</p>
+                    <p><i class="fas fa-phone"></i> +91 9825000000</p>
+                    <p><i class="fas fa-envelope"></i> info@grandpalacehotel.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Management</h4>
+                    <ul>
+                        <li><a href="admin.html">Admin Panel</a></li>
+                        <li><a href="staff.html">Staff Portal</a></li>
+                        <li><a href="booking.html">Reservations</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Grand Palace Hotel. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

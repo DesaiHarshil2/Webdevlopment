@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Grand Palace Hotel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2><i class="fas fa-hotel"></i> Grand Palace Hotel</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="rooms.html" class="nav-link">Rooms</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="events.php" class="nav-link">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a href="gallery.html" class="nav-link">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a href="signup.html" class="nav-link active">Sign Up</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Signup Section -->
+    <section class="auth-section">
+        <div class="container">
+            <div class="auth-container">
+                <div class="auth-form-container">
+                    <div class="auth-header">
+                        <h2>Create Account</h2>
+                        <p>Join Grand Palace Hotel and enjoy exclusive benefits</p>
+                    </div>
+
+                    <form id="signup-form" class="auth-form" method="post" action="register.php" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="first-name">First Name *</label>
+                                <input type="text" id="first-name" name="first-name" placeholder="Harshil"
+                                    autocomplete="given-name" pattern="^[A-Za-z][A-Za-z\s'-]{1,}$" required
+                                    aria-describedby="error-first-name">
+                                <small id="error-first-name" class="error-text" role="alert" aria-live="polite"></small>
+                            </div>
+                            <div class="form-group">
+                                <label for="last-name">Last Name *</label>
+                                <input type="text" id="last-name" name="last-name" placeholder="Desai"
+                                    autocomplete="family-name" pattern="^[A-Za-z][A-Za-z\s'-]{1,}$" required
+                                    aria-describedby="error-last-name">
+                                <small id="error-last-name" class="error-text" role="alert" aria-live="polite"></small>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="signup-email">Email Address *</label>
+                            <input type="email" id="signup-email" name="email" placeholder="you@example.com"
+                                autocomplete="email" inputmode="email" required aria-describedby="error-email">
+                            <small id="error-email" class="error-text" role="alert" aria-live="polite"></small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+91 9773078560" autocomplete="tel"
+                                inputmode="tel" pattern="^[+]?\d[\d\s-]{6,}$" aria-describedby="error-phone">
+                            <small id="error-phone" class="error-text" role="alert" aria-live="polite"></small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="signup-password">Password *</label>
+                            <input type="password" id="signup-password" name="password"
+                                placeholder="At least 8 chars, 1 upper, 1 number" minlength="8"
+                                autocomplete="new-password" required aria-describedby="error-password strength-text">
+                            <div class="strength-meter" aria-hidden="false">
+                                <div class="strength-bars">
+                                    <span></span><span></span><span></span><span></span>
+                                </div>
+                                <small id="strength-text" class="strength-label">Password strength: weak</small>
+                            </div>
+                            <small id="error-password" class="error-text" role="alert" aria-live="polite"></small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="confirm-password">Confirm Password *</label>
+                            <input type="password" id="confirm-password" name="confirm-password"
+                                placeholder="Re-enter password" autocomplete="new-password" required
+                                aria-describedby="error-confirm-password">
+                            <small id="error-confirm-password" class="error-text" role="alert"
+                                aria-live="polite"></small>
+                        </div>
+                        <div class="form-options">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="terms" required>
+                                <span class="checkmark"></span>
+                                I agree to the <a href="#" class="terms-link">Terms and Conditions</a> *
+                            </label>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="captcha-answer">CAPTCHA *</label>
+                            <div style="display:flex;gap:8px;align-items:center">
+                                <span id="captcha-question">Loading...</span>
+                                <button type="button" id="refresh-captcha" class="btn"
+                                    style="padding:6px 10px">↻</button>
+                            </div>
+                            <input type="text" id="captcha-answer" name="captcha_answer" required inputmode="numeric"
+                                pattern="^[0-9]{1,2}$" aria-describedby="error-captcha">
+                            <small id="error-captcha" class="error-text" role="alert" aria-live="polite"></small>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full">Create Account</button>
+
+                        <div class="divider">
+                            <span>or</span>
+                        </div>
+
+                        <div class="social-login">
+                            <button type="button" class="btn btn-social google">
+                                <i class="fab fa-google"></i>
+                                Sign up with Google
+                            </button>
+                        </div>
+
+                        <div class="auth-footer">
+                            <p>Already have an account? <a href="login.html">Sign in here</a></p>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="auth-info">
+                    <div class="info-content">
+                        <h3>Member Benefits</h3>
+                        <div class="info-features">
+                            <div class="info-feature">
+                                <i class="fas fa-percentage"></i>
+                                <div>
+                                    <h4>Exclusive Discounts</h4>
+                                    <p>Get up to 20% off on room bookings</p>
+                                </div>
+                            </div>
+                            <div class="info-feature">
+                                <i class="fas fa-gift"></i>
+                                <div>
+                                    <h4>Welcome Bonus</h4>
+                                    <p>Receive special welcome amenities</p>
+                                </div>
+                            </div>
+                            <div class="info-feature">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <h4>Priority Booking</h4>
+                                    <p>Early access to new rooms and offers</p>
+                                </div>
+                            </div>
+                            <div class="info-feature">
+                                <i class="fas fa-calendar-check"></i>
+                                <div>
+                                    <h4>Flexible Cancellation</h4>
+                                    <p>Free cancellation up to 24 hours before check-in</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Grand Palace Hotel</h3>
+                    <p>Your luxury destination in the heart of the city</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="rooms.html">Rooms</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="events.html">Events</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Junagadh, Gujarat, India</p>
+                    <p><i class="fas fa-phone"></i> +91 9825000000</p>
+                    <p><i class="fas fa-envelope"></i> info@grandpalacehotel.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Management</h4>
+                    <ul>
+                        <li><a href="admin.html">Admin Panel</a></li>
+                        <li><a href="staff.html">Staff Portal</a></li>
+                        <li><a href="booking.html">Reservations</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Grand Palace Hotel. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="script2.js"></script>
+    <script>
+        (function () {
+            const qEl = document.getElementById('captcha-question');
+            const refreshBtn = document.getElementById('refresh-captcha');
+            const form = document.getElementById('signup-form');
+            const pw = document.getElementById('signup-password');
+            const cpw = document.getElementById('confirm-password');
+            const email = document.getElementById('signup-email');
+            const first = document.getElementById('first-name');
+            const last = document.getElementById('last-name');
+
+            function loadCaptcha() {
+                fetch('captcha.php', { cache: 'no-store' })
+                    .then(r => r.json())
+                    .then(d => { if (d && d.question) { qEl.textContent = d.question; } })
+                    .catch(() => { qEl.textContent = 'Solve: 3 + 4'; });
+            }
+            refreshBtn.addEventListener('click', function () { loadCaptcha(); });
+            loadCaptcha();
+
+            form.addEventListener('submit', function (ev) {
+                // Basic client-side validation
+                const errors = [];
+                const emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value);
+                if (!emailOk) { errors.push('Enter a valid email'); }
+                const pwOk = /^(?=.*[A-Z])(?=.*\d).{8,}$/.test(pw.value);
+                if (!pwOk) { errors.push('Password must be 8+ chars, 1 uppercase, 1 number'); }
+                if (pw.value !== cpw.value) { errors.push('Passwords do not match'); }
+                if (!/^[-A-Za-z\s']{2,}$/.test(first.value)) { errors.push('Enter a valid first name'); }
+                if (!/^[-A-Za-z\s']{2,}$/.test(last.value)) { errors.push('Enter a valid last name'); }
+                if (errors.length) { ev.preventDefault(); alert(errors.join('\n')); }
+            });
+        })();
+    </script>
+</body>
+
+</html>
